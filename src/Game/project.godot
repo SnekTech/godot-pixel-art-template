@@ -15,9 +15,18 @@ run/main_scene="uid://ddeqm380rgljy"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="uid://bdohtig5mdd7l"
 
+[autoload]
+
+GTweensGodotUpdater="*res://Scripts/Autoload/GTweensGodotUpdater.cs"
+
 [display]
 
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
 window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [dotnet]
 
