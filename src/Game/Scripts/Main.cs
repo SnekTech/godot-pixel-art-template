@@ -1,6 +1,5 @@
 ﻿using System.Threading;
-using System.Threading.Tasks;
-using Godot;
+using GameTemplate.Constants;
 using GodotUtilities;
 using GTweens.Easings;
 using GTweensGodot.Extensions;
@@ -18,6 +17,13 @@ public partial class Main : Node2D
         SpinAsync().Fire();
     }
 
+    public override void _Input(InputEvent @event)
+    {
+        if (@event.IsActionPressed(InputActions.LeftMouse))
+        {
+            GD.Print("LMB pressed");
+        }
+    }
 
     private async Task SpinAsync()
     {
